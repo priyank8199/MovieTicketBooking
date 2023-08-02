@@ -61,7 +61,7 @@ function MovieProfile() {
   const bookTicket = async() => {
     try{
     axios
-    .post(`https://8egrm7k140.execute-api.us-east-1.amazonaws.com/production/generateTicket`, fields)
+    .post(`https://616d0ohys7.execute-api.us-east-1.amazonaws.com/production/generateTicket`, fields)
     .then((res) => {
       console.log("API Response:", res.data);
       
@@ -77,7 +77,7 @@ function MovieProfile() {
 
 
 useEffect(() => {
-  axios.post(`https://8egrm7k140.execute-api.us-east-1.amazonaws.com/production/movie`, mid)
+  axios.post(`https://616d0ohys7.execute-api.us-east-1.amazonaws.com/production/movie`, mid)
     .then((res) => {
       setMovie(res.data); 
     })
