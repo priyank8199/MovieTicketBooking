@@ -61,9 +61,10 @@ function MovieProfile() {
   const bookTicket = async() => {
     try{
     axios
-    .post(`https://616d0ohys7.execute-api.us-east-1.amazonaws.com/production/generateTicket`, fields)
+    .post(`https://z7of1ojpg0.execute-api.us-east-1.amazonaws.com/production/generateTicket`, fields)
     .then((res) => {
       console.log("API Response:", res.data);
+      alert("Booking confirmation has been send to your email.")
       
     })
     .catch((error) => {
@@ -77,7 +78,7 @@ function MovieProfile() {
 
 
 useEffect(() => {
-  axios.post(`https://616d0ohys7.execute-api.us-east-1.amazonaws.com/production/movie`, mid)
+  axios.post(`https://z7of1ojpg0.execute-api.us-east-1.amazonaws.com/production/movie`, mid)
     .then((res) => {
       setMovie(res.data); 
     })

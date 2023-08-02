@@ -16,7 +16,7 @@ function Movies() {
 
   useEffect(() => {
     axios
-      .post(`https://616d0ohys7.execute-api.us-east-1.amazonaws.com/production/allMovies`)
+      .post(`https://z7of1ojpg0.execute-api.us-east-1.amazonaws.com/production/allMovies`)
       .then((res) => {
         console.log("API Response:", res.data);
         setMovieList(res.data); // Set the movie list directly from res.data
